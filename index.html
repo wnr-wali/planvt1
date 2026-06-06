@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Strategic Expansion Proposal - Vintex Traders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+            overscroll-behavior-y: none;
+        }
+        h1, h2, h3, .font-heading {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+            transform: translateY(15px);
+        }
+        .slide.active {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="text-gray-100 h-screen flex flex-col overflow-hidden">
+
+    <header class="w-full px-4 sm:px-8 py-3 sm:py-4 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 flex justify-between items-center shrink-0 z-50">
+        <div class="flex items-center gap-2 sm:gap-3">
+            <span class="text-lg sm:text-xl font-bold tracking-wider font-heading text-white">VINTEX <span class="text-emerald-400">TRADERS</span></span>
+            <span class="hidden sm:inline-block text-xs bg-slate-800 px-2 py-1 rounded-md text-slate-400 border border-slate-700">Joint Venture Pitch</span>
+        </div>
+        <div class="text-xs sm:text-sm font-medium text-slate-400" id="slide-progress">1 / 6</div>
+    </header>
+
+    <main class="flex-grow w-full max-w-7xl mx-auto overflow-y-auto overflow-x-hidden p-4 sm:p-6 lg:p-8 flex flex-col relative">
+        
+        <div class="slide active w-full flex-col items-center justify-center text-center space-y-5 sm:space-y-6 my-auto py-8" id="slide-1">
+            <div class="inline-block px-3 py-1 sm:px-4 sm:py-1.5 bg-emerald-500/10 border border-emerald-500/30 rounded-full text-emerald-400 text-[10px] sm:text-sm font-medium tracking-wide uppercase animate-pulse">
+                Strategic Partnership Proposal
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight font-heading max-w-4xl leading-tight">
+                Scaling Operations to <span class="gradient-text block sm:inline">82 Lacs</span> Monthly
+            </h1>
+            <p class="text-sm sm:text-lg lg:text-xl text-slate-400 max-w-2xl font-light mx-auto px-2">
+                A turn-key manufacturing consolidation plan combining high-tier brokerage flow with proven high-efficiency production management.
+            </p>
+            <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row gap-2 sm:gap-4 text-center sm:text-left text-xs sm:text-sm text-slate-500 w-full justify-center">
+                <div><strong>Presenter:</strong> Vintex Management</div>
+                <div class="hidden sm:block border-l border-slate-800 pl-4"></div>
+                <div><strong>Agenda:</strong> 6-Machine Consolidated Setup</div>
+            </div>
+        </div>
+
+        <div class="slide w-full flex-col space-y-5 sm:space-y-6 py-4 my-auto" id="slide-2">
+            <div class="flex flex-col space-y-1 sm:space-y-2 text-center sm:text-left">
+                <span class="text-emerald-400 font-medium text-[10px] sm:text-sm tracking-widest uppercase">Phase 1: Proof of Capability</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading">Established 2-Machine Efficiency</h2>
+            </div>
+            
+            <p class="text-slate-400 text-xs sm:text-sm lg:text-base max-w-3xl text-center sm:text-left">
+                Data extracted directly from our verified ledger system. Our optimized dual-shift setup operates at peak performance, maintaining a resilient <strong>22.42% net profit margin</strong>.
+            </p>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                <div class="bg-slate-900/60 border border-slate-800 p-3 sm:p-5 rounded-xl backdrop-blur-sm">
+                    <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider">Monthly Revenue</div>
+                    <div class="text-lg sm:text-2xl font-bold font-heading mt-1 text-white">22.36 Lacs</div>
+                    <div class="text-[10px] sm:text-xs text-emerald-400 mt-1 sm:mt-2">Stable Billing Curve</div>
+                </div>
+                <div class="bg-slate-900/60 border border-slate-800 p-3 sm:p-5 rounded-xl backdrop-blur-sm">
+                    <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider">Monthly Profit</div>
+                    <div class="text-lg sm:text-2xl font-bold font-heading mt-1 text-emerald-400">5.01 Lacs</div>
+                    <div class="text-[10px] sm:text-xs text-slate-500 mt-1 sm:mt-2">Net Take-Home</div>
+                </div>
+                <div class="bg-slate-900/60 border border-slate-800 p-3 sm:p-5 rounded-xl backdrop-blur-sm">
+                    <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider">Velocity</div>
+                    <div class="text-lg sm:text-2xl font-bold font-heading mt-1 text-blue-400">1,200 RPM</div>
+                    <div class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2">18-Hour Run</div>
+                </div>
+                <div class="bg-slate-900/60 border border-slate-800 p-3 sm:p-5 rounded-xl backdrop-blur-sm">
+                    <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider">Daily Output</div>
+                    <div class="text-lg sm:text-2xl font-bold font-heading mt-1 text-purple-400">1.3M Stitches</div>
+                    <div class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2">650k / Machine</div>
+                </div>
+            </div>
+
+            <div class="w-full overflow-x-auto scrollbar-hide bg-slate-900/40 border border-slate-800 rounded-xl mt-2 sm:mt-0">
+                <table class="w-full text-left text-xs sm:text-sm text-slate-300 min-w-[500px]">
+                    <thead class="bg-slate-900/80 text-[10px] sm:text-xs uppercase text-slate-400 border-b border-slate-800 font-heading">
+                        <tr>
+                            <th class="px-4 py-2 sm:px-6 sm:py-3.5">Month (2026)</th>
+                            <th class="px-4 py-2 sm:px-6 sm:py-3.5">Gross (PKR)</th>
+                            <th class="px-4 py-2 sm:px-6 sm:py-3.5">Expenses (PKR)</th>
+                            <th class="px-4 py-2 sm:px-6 sm:py-3.5">Net Profit</th>
+                            <th class="px-4 py-2 sm:px-6 sm:py-3.5 text-right">Margin</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800/60">
+                        <tr class="hover:bg-slate-800/20">
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 font-medium text-white whitespace-nowrap">January</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 whitespace-nowrap">2,233,763</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 whitespace-nowrap">1,772,968</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 text-emerald-400 font-medium whitespace-nowrap">460,795</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 text-right text-slate-400 whitespace-nowrap">20.63%</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/20">
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 font-medium text-white whitespace-nowrap">February</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 whitespace-nowrap">2,201,588</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 whitespace-nowrap">1,734,216</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 text-emerald-400 font-medium whitespace-nowrap">467,372</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 text-right text-slate-400 whitespace-nowrap">21.23%</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/20">
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 font-medium text-white whitespace-nowrap">March</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 whitespace-nowrap">2,283,261</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 whitespace-nowrap">1,759,953</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 text-emerald-400 font-medium whitespace-nowrap">523,308</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 text-right text-slate-400 whitespace-nowrap">22.92%</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/20">
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 font-medium text-white whitespace-nowrap">April</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 whitespace-nowrap">2,229,358</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 whitespace-nowrap">1,674,947</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 text-emerald-400 font-medium whitespace-nowrap">554,411</td>
+                            <td class="px-4 py-2 sm:px-6 sm:py-3.5 text-right text-slate-400 whitespace-nowrap">24.87%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="slide w-full flex-col space-y-4 sm:space-y-6 py-4 my-auto" id="slide-3">
+            <div class="flex flex-col space-y-1 sm:space-y-2 text-center sm:text-left">
+                <span class="text-blue-400 font-medium text-[10px] sm:text-sm tracking-widest uppercase">Phase 2: The New Horizon</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading">The 6-Machine Footprint</h2>
+            </div>
+
+            <p class="text-slate-400 text-xs sm:text-sm max-w-3xl text-center sm:text-left">
+                Consolidating your brokerage consumer engine with our production expertise locks in an immediate scale dynamic.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-6 pt-2">
+                <div class="bg-slate-900/50 border border-slate-800 p-4 sm:p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs sm:text-sm font-semibold text-emerald-400 mb-1 sm:mb-2">Vintex Base Unit</div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white font-heading">2 Existing Machines</h3>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1 sm:mt-2">Currently producing stable metrics in private facility space.</p>
+                    </div>
+                    <div class="mt-4 border-t border-slate-800/60 pt-3 sm:pt-4">
+                        <span class="text-[10px] sm:text-xs text-slate-500 block uppercase">Current Billing</span>
+                        <span class="text-lg sm:text-2xl font-bold text-white font-heading">22 Lacs Avg</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/50 border border-slate-800 p-4 sm:p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs sm:text-sm font-semibold text-blue-400 mb-1 sm:mb-2">Partner Asset Injection</div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white font-heading">4 New Machines</h3>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1 sm:mt-2">Placed in optimized rental facility hall, fully paid upfront.</p>
+                    </div>
+                    <div class="mt-4 border-t border-slate-800/60 pt-3 sm:pt-4">
+                        <span class="text-[10px] sm:text-xs text-slate-500 block uppercase">Projected Billing</span>
+                        <span class="text-lg sm:text-2xl font-bold text-white font-heading">60 Lacs Target</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-900 to-slate-950 border-2 border-emerald-500/30 p-4 sm:p-6 rounded-xl flex flex-col justify-between shadow-xl relative overflow-hidden">
+                    <div class="absolute -right-8 -top-8 w-24 h-24 bg-emerald-500/10 rounded-full blur-xl"></div>
+                    <div class="relative z-10">
+                        <div class="text-xs sm:text-sm font-semibold text-emerald-400 mb-1 sm:mb-2">Consolidated Enterprise</div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white font-heading">6-Machine Setup</h3>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1 sm:mt-2">100% centralized production under unified technical supervision.</p>
+                    </div>
+                    <div class="mt-4 border-t border-slate-800/60 pt-3 sm:pt-4 relative z-10">
+                        <span class="text-[10px] sm:text-xs text-slate-400 block uppercase">Total Gross Billing</span>
+                        <span class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-heading">82 Lacs / mo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide w-full flex-col space-y-4 sm:space-y-6 py-4 my-auto" id="slide-4">
+            <div class="flex flex-col space-y-1 sm:space-y-2 text-center sm:text-left">
+                <span class="text-purple-400 font-medium text-[10px] sm:text-sm tracking-widest uppercase">Phase 3: Flawless Management</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading">Turnkey Technical Supervision</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 items-center">
+                <div class="space-y-3 sm:space-y-4">
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Managing a full 6-machine floor running 24/7 involves extreme mental and physical equity. Moving high-speed commercial embroidery machines requires strict mechanical, structural, and electrical oversight.
+                    </p>
+                    <blockquote class="border-l-2 border-emerald-500 bg-slate-900/60 p-3 sm:p-4 rounded-r-lg text-xs sm:text-sm text-slate-400 italic">
+                        "While the broker partner supplies market flow, Vintex Traders delivers total end-to-end, dual-shift production engineering."
+                    </blockquote>
+                </div>
+
+                <div class="bg-slate-950/80 border border-slate-800 p-4 sm:p-6 rounded-xl sm:rounded-2xl space-y-3 sm:space-y-4">
+                    <h3 class="font-bold text-white text-sm sm:text-base uppercase tracking-wider font-heading">Operational Commitment</h3>
+                    <div class="space-y-2 sm:space-y-3 text-xs sm:text-sm">
+                        <div class="flex items-start gap-2 sm:gap-3">
+                            <span class="text-emerald-400 mt-0.5">✔</span>
+                            <p class="text-slate-300"><strong class="text-white">Dual-Shift Oversight:</strong> Monitoring continuous 12-hour single-side patterns across all units.</p>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3">
+                            <span class="text-emerald-400 mt-0.5">✔</span>
+                            <p class="text-slate-300"><strong class="text-white">Performance Locking:</strong> Ensuring steady 1200 RPM velocities to capture full stitch quotas.</p>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3">
+                            <span class="text-emerald-400 mt-0.5">✔</span>
+                            <p class="text-slate-300"><strong class="text-white">Wastage Minimization:</strong> Managing precision thread utilization metrics across every job cycle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide w-full flex-col space-y-4 sm:space-y-6 py-4 my-auto" id="slide-5">
+            <div class="flex flex-col space-y-1 sm:space-y-2 text-center sm:text-left">
+                <span class="text-amber-400 font-medium text-[10px] sm:text-sm tracking-widest uppercase">Phase 4: The Financial Split</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading">Strategic Commercial Framework</h2>
+            </div>
+
+            <p class="text-slate-400 text-xs sm:text-sm max-w-3xl text-center sm:text-left">
+                Because the partner company directly retains the total combined sales revenue pool (82+ Lacs) after fulfillment, the commercial payout is divided into two strict business vectors:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 pt-2">
+                <div class="bg-slate-900/40 border border-slate-800 p-4 sm:p-6 rounded-xl space-y-3 sm:space-y-4 relative">
+                    <div class="static sm:absolute sm:right-4 sm:top-4 text-[10px] sm:text-xs font-semibold text-slate-500 uppercase font-heading mb-2 sm:mb-0">Vector 01</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white font-heading">1. Machine Asset Payout</h3>
+                    <p class="text-xs sm:text-sm text-slate-400">Compensation for placing our existing production machinery inside the new shared space:</p>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-300 pl-1">
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-1.5 shrink-0"></span> <span><strong>Guaranteed Profit Base:</strong> Fixed take-home distribution matching existing capacity.</span></li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-1.5 shrink-0"></span> <span><strong>Installment Coverage:</strong> Direct 517,175 PKR monthly liability paid out from core expenses.</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900/40 border border-slate-800 p-4 sm:p-6 rounded-xl space-y-3 sm:space-y-4 relative">
+                    <div class="static sm:absolute sm:right-4 sm:top-4 text-[10px] sm:text-xs font-semibold text-slate-500 uppercase font-heading mb-2 sm:mb-0">Vector 02</div>
+                    <h3 class="text-lg sm:text-xl font-bold text-white font-heading">2. Management Equity Value</h3>
+                    <p class="text-xs sm:text-sm text-slate-400">Compensation for executing 100% of physical and mental operations across the floor:</p>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-300 pl-1">
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 shrink-0"></span> <span><strong>25.9% Equity Shareholder:</strong> Proportional distribution of the new facility setup.</span></li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 shrink-0"></span> <span><strong>Turnkey Management Fee:</strong> Distinct baseline overhead for absolute management of 4 partner machines.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide w-full flex-col space-y-4 sm:space-y-6 py-4 my-auto" id="slide-6">
+            <div class="flex flex-col space-y-1 sm:space-y-2 text-center sm:text-left">
+                <span class="text-emerald-400 font-medium text-[10px] sm:text-sm tracking-widest uppercase">Phase 5: Secure Integration</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading">Mutual Commitments & Safeguards</h2>
+            </div>
+
+            <p class="text-slate-400 max-w-2xl text-xs sm:text-sm text-center sm:text-left">
+                To guarantee frictionless production and protect long-term financial collaboration, the partnership incorporates three baseline operational clauses:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
+                <div class="p-4 sm:p-5 bg-slate-900/30 border border-slate-800 rounded-xl space-y-1.5 sm:space-y-2">
+                    <div class="text-xs sm:text-sm font-semibold text-white font-heading">Supply Guarantee</div>
+                    <p class="text-[10px] sm:text-xs text-slate-400 leading-relaxed">Partner guarantees seamless textile flow. Overhead payout remains unaffected by broker supply adjustments.</p>
+                </div>
+                <div class="p-4 sm:p-5 bg-slate-900/30 border border-slate-800 rounded-xl space-y-1.5 sm:space-y-2">
+                    <div class="text-xs sm:text-sm font-semibold text-white font-heading">Asset Title Protection</div>
+                    <p class="text-[10px] sm:text-xs text-slate-400 leading-relaxed">Explicitly documented that while the installment is cleared through shared costs, ownership of our 2 units remains independent.</p>
+                </div>
+                <div class="p-4 sm:p-5 bg-slate-900/30 border border-slate-800 rounded-xl space-y-1.5 sm:space-y-2">
+                    <div class="text-xs sm:text-sm font-semibold text-white font-heading">Relocation Clause</div>
+                    <p class="text-[10px] sm:text-xs text-slate-400 leading-relaxed">In the event of restructuring, safe transit of our 2 core machines back to our original space is covered by the shared entity.</p>
+                </div>
+            </div>
+
+            <div class="mt-2 sm:mt-4 p-3 sm:p-4 bg-emerald-950/20 border border-emerald-500/20 rounded-xl text-center">
+                <span class="text-[10px] sm:text-sm font-medium text-emerald-400 font-heading">Let's build a highly scalable production powerhouse together.</span>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="w-full px-4 sm:px-8 py-3 sm:py-4 bg-slate-900/80 backdrop-blur-md border-t border-slate-800 flex justify-between items-center shrink-0 z-50">
+        <button id="prev-btn" class="px-3 sm:px-5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 font-medium text-xs sm:text-sm transition-colors text-slate-300 disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer" disabled>
+            ← <span class="hidden sm:inline">Previous</span>
+        </button>
+        <div class="hidden md:flex gap-2 text-xs text-slate-500 items-center">
+            <span class="bg-slate-800 border border-slate-700 px-1.5 py-0.5 rounded text-slate-400">←</span>
+            <span class="bg-slate-800 border border-slate-700 px-1.5 py-0.5 rounded text-slate-400">→</span>
+            <span>Keyboard navigation enabled</span>
+        </div>
+        <button id="next-btn" class="px-4 sm:px-5 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-500 hover:to-emerald-500 font-medium text-xs sm:text-sm transition-all shadow-md cursor-pointer text-white">
+            <span class="sm:hidden">Next →</span>
+            <span class="hidden sm:inline">Next Slide →</span>
+        </button>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const progressText = document.getElementById('slide-progress');
+        let currentSlideIdx = 0;
+
+        function updateSlideVisibility() {
+            slides.forEach((slide, idx) => {
+                if (idx === currentSlideIdx) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            prevBtn.disabled = currentSlideIdx === 0;
+            
+            const isMobile = window.innerWidth < 640;
+            if (currentSlideIdx === slides.length - 1) {
+                nextBtn.innerHTML = isMobile ? "Finish" : "Finish Presentation";
+            } else {
+                nextBtn.innerHTML = isMobile ? "Next →" : "Next Slide →";
+            }
+
+            progressText.innerText = `${currentSlideIdx + 1} / ${slides.length}`;
+            
+            const mainContainer = document.querySelector('main');
+            if(mainContainer) mainContainer.scrollTop = 0;
+        }
+
+        function nextSlide() {
+            if (currentSlideIdx < slides.length - 1) {
+                currentSlideIdx++;
+                updateSlideVisibility();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlideIdx > 0) {
+                currentSlideIdx--;
+                updateSlideVisibility();
+            }
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+        
+        window.addEventListener('resize', updateSlideVisibility);
+    </script>
+</body>
+</html>
