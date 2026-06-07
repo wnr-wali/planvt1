@@ -1,14 +1,3 @@
-I know exactly what is happening here. Looking at your Android screenshot, this is caused by the infamous "mobile viewport height bug."
-
-On Android browsers (like Chrome), the bottom navigation bar and the top URL bar take up physical screen space, but standard code still calculates the height as if they aren't there. Because the previous code told the app to take up exactly 100% of the screen height (`h-screen`) and hide anything that overflows, your navigation buttons were pushed down **underneath** your phone's physical screen bezel. iOS handles this slightly differently, which is why it worked there.
-
-To make this completely bulletproof and feel like a true native app on your Samsung, I have completely rewritten the layout structure using a `fixed inset-0` framework. This physically pins the header to the very top and the footer to the very bottom of the *visible* screen, regardless of whether the browser's URL bar is showing or not.
-
-**Major Upgrade Included:** I also added **Touch Swipe Support** in the Javascript. Now, when you are presenting at the dinner, you don't even need to press the buttons—you can just swipe left and right on your phone screen to change slides.
-
-Copy this entire block and overwrite your `vinplan1.html` file on GitHub:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +12,6 @@ Copy this entire block and overwrite your `vinplan1.html` file on GitHub:
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0b0f19;
-            /* Prevents pull-to-refresh on mobile */
             overscroll-behavior-y: none; 
         }
         h1, h2, h3, .font-heading {
@@ -350,7 +338,6 @@ Copy this entire block and overwrite your `vinplan1.html` file on GitHub:
 
             progressText.innerText = `${currentSlideIdx + 1} / ${slides.length}`;
             
-            // Scroll to top of the scrollable area when changing slides
             const mainContainer = document.querySelector('main');
             if(mainContainer) mainContainer.scrollTop = 0;
         }
@@ -369,17 +356,14 @@ Copy this entire block and overwrite your `vinplan1.html` file on GitHub:
             }
         }
 
-        // Button Clicks
         nextBtn.addEventListener('click', nextSlide);
         prevBtn.addEventListener('click', prevSlide);
 
-        // Keyboard Navigation
         window.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight') nextSlide();
             if (e.key === 'ArrowLeft') prevSlide();
         });
         
-        // Touch Swipe Navigation for Mobile
         let touchstartX = 0;
         let touchendX = 0;
         let touchstartY = 0;
@@ -388,16 +372,15 @@ Copy this entire block and overwrite your `vinplan1.html` file on GitHub:
         const touchArea = document.getElementById('touch-area');
 
         function handleGesture() {
-            // Check if swipe is horizontal enough (ignore vertical scrolling)
             const yDiff = Math.abs(touchendY - touchstartY);
             const xDiff = Math.abs(touchendX - touchstartX);
             
             if (xDiff > 50 && xDiff > yDiff) {
                 if (touchendX < touchstartX) {
-                    nextSlide(); // Swiped left
+                    nextSlide(); 
                 }
                 if (touchendX > touchstartX) {
-                    prevSlide(); // Swiped right
+                    prevSlide(); 
                 }
             }
         }
@@ -413,11 +396,8 @@ Copy this entire block and overwrite your `vinplan1.html` file on GitHub:
             handleGesture();
         }, {passive: true});
 
-        // Initialize
         window.addEventListener('resize', updateSlideVisibility);
         updateSlideVisibility();
     </script>
 </body>
 </html>
-
-```
